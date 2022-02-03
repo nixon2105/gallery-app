@@ -132,3 +132,15 @@ button {
   outline: none !important;
   cursor: pointer;
 }
+
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.img-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid #f39200;
+}
