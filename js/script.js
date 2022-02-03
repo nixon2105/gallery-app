@@ -17,8 +17,8 @@ const getImages = async (url) => {
 getImages(url);
 
 const showImages = (data) => {
+  containerImages.innerHTML = '';
   data.slice(0, 8).map((el) => {
-    console.log(el.urls.regular);
     containerImages.innerHTML += createTemplate(el);
   });
 };
