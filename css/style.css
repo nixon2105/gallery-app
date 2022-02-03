@@ -63,7 +63,7 @@ body {
   font-size: 14px;
   font-family: 'Pangolin', cursive;
 }
-.header-search:hover > .search-btn {
+.search-btn:hover {
   background: #fff;
 }
 
