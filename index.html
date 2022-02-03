@@ -10,9 +10,41 @@
       href="./assets/img/favicon.png"
       rel="shortcut icon"
     />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header-container">
+          <div class="header-logo">
+            <img class="logo-img" src="./assets/img/logo.svg" alt="logo" />
+          </div>
+          <form class="header-search">
+            <input
+              class="search-request"
+              type="text"
+              placeholder="Type to search"
+              autofocus
+            />
+            <a href="#" class="clear-btn">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </form>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="cards"></div>
+        </div>
+      </main>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
