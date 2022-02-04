@@ -134,6 +134,7 @@ button {
 }
 
 .gallery-container {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -144,4 +145,5 @@ button {
   border-radius: 10px;
   border: 3px solid #f39200;
   object-fit: cover;
+  margin-bottom: 20px;
 }

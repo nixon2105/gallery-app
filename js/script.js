@@ -2,6 +2,7 @@ const url =
   'https://api.unsplash.com/search/photos?query=summer&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo';
 
 const containerImages = document.querySelector('.gallery-container');
+const input = document.querySelector('.search-request');
 
 const createTemplate = (data) => {
   return `<img class="img-item" src="${data.urls.regular}" alt="logo" />`;
@@ -22,3 +23,10 @@ const showImages = (data) => {
     containerImages.innerHTML += createTemplate(el);
   });
 };
+
+input.addEventListener(
+  ('keydown',
+  (e) => {
+    if (e.key === 'Enter') getImages();
+  })
+);
