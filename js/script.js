@@ -49,5 +49,4 @@ const searchImages = (e) => {
 };
 
 btnSearch.addEventListener('click', searchImages);
-
 form.addEventListener('submit', searchImages);
