@@ -22,7 +22,7 @@ getImages(url);
 
 const showImages = (data) => {
   containerImages.innerHTML = '';
-  data.map((el) => {
+  data.slice(0, 8).map((el) => {
     containerImages.innerHTML += createTemplate(el);
   });
 };
