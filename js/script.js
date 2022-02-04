@@ -3,6 +3,7 @@ const url =
 
 const containerImages = document.querySelector('.gallery-container');
 const input = document.querySelector('.search-request');
+const clearSearch = document.querySelector('.clear-btn');
 
 const createTemplate = (data) => {
   return `<img class="img-item" src="${data.urls.regular}" alt="logo" />`;
@@ -24,9 +25,14 @@ const showImages = (data) => {
   });
 };
 
-input.addEventListener(
-  ('keydown',
-  (e) => {
-    if (e.key === 'Enter') getImages();
-  })
-);
+clearSearch.addEventListener('click', (e) => {
+  e.preventDefault();
+  input.value = '';
+});
+
+// input.addEventListener(
+//   ('keydown',
+//   (e) => {
+//     if (e.key === 'Enter') getImages();
+//   })
+// );
